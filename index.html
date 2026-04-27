@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>컴퓨터 주변기기 전문쇼핑몰 | CumpStore</title>
+  <meta name="description" content="프리미엄 기계식 키보드, 게이밍 마우스, 마우스패드를 최저가로 만나보세요. 내가 찾던 바로 그 제품, 컴스토어에서 지금 바로 확인하세요." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── TOP UTILITY BAR ── -->
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <div class="utility-left">
+        <span>프리미엄 주변기기 전문 쇼핑몰</span>
+      </div>
+      <div class="utility-right">
+        <div class="dropdown-wrapper" id="customerDropdown">
+          <button class="utility-btn dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            고객센터
+            <svg class="chevron-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="dropdown-menu" role="menu">
+            <a href="manual.html" class="dropdown-item" role="menuitem" id="softwareManualLink">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10,9 9,9 8,9"/></svg>
+              소프트웨어 메뉴얼
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── NAVIGATION ── -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo" id="logoLink">
+        <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+          <rect width="40" height="40" rx="10" fill="url(#logoGrad)"/>
+          <path d="M10 20 L18 12 L26 20 L18 28 Z" fill="white" opacity="0.9"/>
+          <path d="M18 12 L30 20 L18 28" fill="white" opacity="0.6"/>
+          <defs>
+            <linearGradient id="logoGrad" x1="0" y1="0" x2="40" y2="40">
+              <stop offset="0%" stop-color="#6C63FF"/>
+              <stop offset="100%" stop-color="#3ECFCF"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">CumpStore</span>
+      </a>
+
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <a href="#hero" class="nav-link" id="homeNavLink">홈</a>
+        <a href="#products" class="nav-link" id="productsNavLink">제품</a>
+        <a href="#showcase" class="nav-link" id="showcaseNavLink">쇼케이스</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://smartstore.naver.com" target="_blank" rel="noopener noreferrer" class="btn-store" id="storeNavBtn">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+          네이버스토어 바로가기
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ── HERO SLIDER ── -->
+    <section class="hero" id="hero" aria-label="메인 배너 슬라이더">
+      <div class="slider-track" id="sliderTrack">
+
+        <div class="slide" id="slide1">
+          <img src="images/banner1.png" alt="프리미엄 기계식 키보드 배너" class="slide-img" />
+          <div class="slide-overlay">
+            <div class="slide-content">
+              <span class="slide-tag">NEW ARRIVAL</span>
+              <h1 class="slide-title">프리미엄<br>기계식 키보드</h1>
+              <p class="slide-desc">타이핑의 새로운 경험,<br>손끝에서 시작되는 완벽한 퍼포먼스</p>
+              <a href="https://smartstore.naver.com" target="_blank" rel="noopener noreferrer" class="slide-cta" id="slideCta1">지금 구매하기</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide" id="slide2">
+          <img src="images/banner2.png" alt="울트라 경량 게이밍 마우스 배너" class="slide-img" />
+          <div class="slide-overlay slide-overlay--light">
+            <div class="slide-content slide-content--dark">
+              <span class="slide-tag slide-tag--dark">BEST SELLER</span>
+              <h1 class="slide-title slide-title--dark">ULTRA<br>LIGHTWEIGHT</h1>
+              <p class="slide-desc slide-desc--dark">극한의 경량화, 최고의 정밀함<br>게이밍 마우스의 새 기준</p>
+              <a href="https://smartstore.naver.com" target="_blank" rel="noopener noreferrer" class="slide-cta slide-cta--dark" id="slideCta2">지금 구매하기</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide" id="slide3">
+          <img src="images/banner3.png" alt="프리미엄 게이밍 주변기기 컬렉션 배너" class="slide-img" />
+          <div class="slide-overlay">
+            <div class="slide-content">
+              <span class="slide-tag">COLLECTION</span>
+              <h1 class="slide-title">프리미엄<br>게이밍 셋업</h1>
+              <p class="slide-desc">당신만의 완벽한 셋업을<br>지금 완성하세요</p>
+              <a href="https://smartstore.naver.com" target="_blank" rel="noopener noreferrer" class="slide-cta" id="slideCta3">컬렉션 보기</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Slider Controls -->
+      <button class="slider-btn slider-btn--prev" id="sliderPrev" aria-label="이전 슬라이드">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="slider-btn slider-btn--next" id="sliderNext" aria-label="다음 슬라이드">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+
+      <!-- Slider Dots -->
+      <div class="slider-dots" id="sliderDots" role="tablist" aria-label="슬라이드 선택">
+        <button class="dot dot--active" role="tab" aria-selected="true" aria-label="슬라이드 1" data-index="0" id="dot0"></button>
+        <button class="dot" role="tab" aria-selected="false" aria-label="슬라이드 2" data-index="1" id="dot1"></button>
+        <button class="dot" role="tab" aria-selected="false" aria-label="슬라이드 3" data-index="2" id="dot2"></button>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="slider-progress">
+        <div class="slider-progress-bar" id="sliderProgressBar"></div>
+      </div>
+    </section>
+
+    <!-- ── PRODUCTS SECTION ── -->
+    <section class="products-section" id="products">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Products</span>
+          <h2 class="section-title">인기 제품</h2>
+          <p class="section-desc">엄선된 프리미엄 주변기기를 만나보세요</p>
+        </div>
+
+        <div class="products-grid">
+
+          <!-- Product Card 1 -->
+          <a href="https://smartstore.naver.com" target="_blank" rel="noopener noreferrer" class="product-card" id="productCard1">
+            <div class="product-img-wrap">
+              <img src="images/product1.png" alt="프리미엄 기계식 키보드" class="product-img" loading="lazy" />
+              <div class="product-badge">BEST</div>
+              <div class="product-hover-overlay">
+                <span class="product-hover-text">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                  네이버스토어에서 보기
+                </span>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">기계식 키보드</span>
+              <h3 class="product-name">프리미엄 75% 기계식 키보드</h3>
+              <p class="product-desc">부드러운 타건감과 세련된 디자인의 완벽한 조화</p>
+              <div class="product-footer">
+                <span class="product-link-label">네이버스토어 바로가기 →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Product Card 2 -->
+          <a href="https://smartstore.naver.com" target="_blank" rel="noopener noreferrer" class="product-card" id="productCard2">
+            <div class="product-img-wrap">
+              <img src="images/product2.png" alt="울트라 경량 게이밍 마우스" class="product-img" loading="lazy" />
+              <div class="product-badge product-badge--new">NEW</div>
+              <div class="product-hover-overlay">
+                <span class="product-hover-text">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                  네이버스토어에서 보기
+                </span>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">게이밍 마우스</span>
+              <h3 class="product-name">울트라 경량 무선 게이밍 마우스</h3>
+              <p class="product-desc">극한의 경량화로 빠른 반응속도와 정밀한 조준 실현</p>
+              <div class="product-footer">
+                <span class="product-link-label">네이버스토어 바로가기 →</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Product Card 3 -->
+          <a href="https://smartstore.naver.com" target="_blank" rel="noopener noreferrer" class="product-card" id="productCard3">
+            <div class="product-img-wrap">
+              <img src="images/product3.png" alt="XL 게이밍 마우스패드" class="product-img" loading="lazy" />
+              <div class="product-hover-overlay">
+                <span class="product-hover-text">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+                  네이버스토어에서 보기
+                </span>
+              </div>
+            </div>
+            <div class="product-info">
+              <span class="product-category">마우스패드</span>
+              <h3 class="product-name">XL 프리미엄 게이밍 마우스패드</h3>
+              <p class="product-desc">넓은 면적과 정밀한 표면 처리로 완벽한 트래킹 지원</p>
+              <div class="product-footer">
+                <span class="product-link-label">네이버스토어 바로가기 →</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <div class="products-cta">
+          <a href="https://smartstore.naver.com" target="_blank" rel="noopener noreferrer" class="btn-all-products" id="allProductsBtn">
+            전체 제품 보기
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── SHOWCASE SECTION (Real product image) ── -->
+    <section class="showcase-section" id="showcase">
+      <div class="container">
+        <div class="showcase-inner">
+          <div class="showcase-text">
+            <span class="section-tag">Showcase</span>
+            <h2 class="showcase-title">실제 제품을<br>직접 확인하세요</h2>
+            <p class="showcase-desc">
+              섬세한 장인 정신으로 만들어진 프리미엄 주변기기.<br>
+              클라우드 손목 받침대, 고급 기계식 키보드,<br>초경량 마우스까지 — 완벽한 셋업의 시작.
+            </p>
+            <div class="showcase-features">
+              <div class="feature-item">
+                <div class="feature-icon">⌨️</div>
+                <div>
+                  <strong>기계식 키보드</strong>
+                  <span>부드러운 타건감과 내구성</span>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">🖥️</div>
+                <div>
+                  <strong>인체공학 손목 받침대</strong>
+                  <span>장시간 타이핑도 편안하게</span>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">🖱️</div>
+                <div>
+                  <strong>초경량 무선 마우스</strong>
+                  <span>정밀한 센서와 극한의 경량화</span>
+                </div>
+              </div>
+            </div>
+            <a href="https://smartstore.naver.com" target="_blank" rel="noopener noreferrer" class="btn-showcase" id="showcaseBtn">
+              네이버스토어에서 구매하기
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+          <div class="showcase-image-wrap">
+            <div class="showcase-image-glow"></div>
+            <img src="images/product_real.png" alt="실제 프리미엄 키보드, 마우스, 손목받침대 제품 이미지" class="showcase-img" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <svg class="logo-icon footer-logo-icon" viewBox="0 0 40 40" fill="none">
+          <rect width="40" height="40" rx="10" fill="url(#footerLogoGrad)"/>
+          <path d="M10 20 L18 12 L26 20 L18 28 Z" fill="white" opacity="0.9"/>
+          <path d="M18 12 L30 20 L18 28" fill="white" opacity="0.6"/>
+          <defs>
+            <linearGradient id="footerLogoGrad" x1="0" y1="0" x2="40" y2="40">
+              <stop offset="0%" stop-color="#6C63FF"/>
+              <stop offset="100%" stop-color="#3ECFCF"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">CumpStore</span>
+      </div>
+      <div class="footer-links">
+        <a href="manual.html" id="footerManualLink">소프트웨어 메뉴얼</a>
+        <a href="https://smartstore.naver.com" target="_blank" rel="noopener noreferrer" id="footerStoreLink">네이버스토어</a>
+      </div>
+      <p class="footer-copy">© 2025 CumpStore. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
