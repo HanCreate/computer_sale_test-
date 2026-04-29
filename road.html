@@ -1,14 +1,78 @@
 <!DOCTYPE html>
+
 <html lang="ko">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>찾아오시는 길 - UNITHINK</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-    
+    <link rel="stylesheet" href="style.css?v=20260428" />
+    <link rel="icon" href="images/favicon.png" type="image/png">    
     <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=YOUR_CLIENT_ID"></script>
 </head>
+
+  <!-- ── TOP UTILITY BAR ── -->
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <div class="utility-left">
+        <span>헤드셋 & 조립PC 전문 쇼핑몰 UNITHINK</span>
+      </div>
+      <div class="utility-right">
+        <div class="dropdown-wrapper" id="customerDropdown">
+          <button class="utility-btn dropdown-trigger" aria-haspopup="true" aria-expanded="false">
+            고객센터
+            <svg class="chevron-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <div class="dropdown-menu" role="menu">
+            <a href="manual.html" class="dropdown-item" role="menuitem" id="softwareManualLink">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10,9 9,9 8,9"/></svg>
+              소프트웨어 메뉴얼
+            </a>
+            <a href="road.html" class="dropdown-item" role="menuitem" id="locationLink">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              찾아오시는 길
+            </a>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── NAVIGATION ── -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo" id="logoLink">
+        <svg class="logo-icon" viewBox="0 0 40 40" fill="none">
+          <rect width="40" height="40" rx="10" fill="url(#logoGrad2)"/>
+          <path d="M10 20 L18 12 L26 20 L18 28 Z" fill="white" opacity="0.9"/>
+          <path d="M18 12 L30 20 L18 28" fill="white" opacity="0.6"/>
+          <defs>
+            <linearGradient id="logoGrad2" x1="0" y1="0" x2="40" y2="40">
+              <stop offset="0%" stop-color="#6C63FF"/>
+              <stop offset="100%" stop-color="#3ECFCF"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <span class="logo-text">UNITHINK</span>
+      </a>
+      <nav class="main-nav" aria-label="주요 메뉴">
+        <a href="index.html" class="nav-link">홈</a>
+        <a href="index.html#products" class="nav-link">제품</a>
+        <a href="index.html#showcase" class="nav-link">쇼케이스</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="https://smartstore.naver.com" target="_blank" rel="noopener noreferrer" class="btn-store" id="storeNavBtn">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-8 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>
+          네이버스토어 바로가기
+        </a>
+      </div>
+    </div>
+  </header>
+
+
 <body>
 
     <div class="container" style="padding: 60px 20px;">
@@ -53,8 +117,7 @@
             animation: naver.maps.Animation.BOUNCE // 마커가 톡톡 튀는 효과
         });
     </script>
-</body>
-</html>
+  </html>
 
 
   <!-- ── FOOTER ── -->
@@ -82,7 +145,7 @@
           <a href="https://smartstore.naver.com/sjmsys" target="_blank" rel="noopener noreferrer" id="footerStoreLink">네이버스토어</a>
         </div>
       </div>
-      
+
  <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.05); margin: 30px 0;">
 
       <div class="footer-info" style="color: #888; font-size: 0.85rem; line-height: 1.8; text-align: left;">
