@@ -117,8 +117,7 @@
             animation: naver.maps.Animation.BOUNCE // 마커가 톡톡 튀는 효과
         });
     </script>
-  </html>
-
+  
 
   <!-- ── FOOTER ── -->
   <footer class="site-footer" id="siteFooter">
@@ -165,7 +164,21 @@
 
     </div>
   </footer>
-
+<script>
+      var location_coords = new naver.maps.LatLng(37.5326, 126.9648);
+      var mapOptions = {
+          center: location_coords,
+          zoom: 17,
+          zoomControl: true,
+          zoomControlOptions: { position: naver.maps.Position.TOP_RIGHT }
+      };
+      var map = new naver.maps.Map('map', mapOptions);
+      var marker = new naver.maps.Marker({
+          position: location_coords,
+          map: map,
+          animation: naver.maps.Animation.BOUNCE
+      });
+  </script>
   <script src="script.js?v=20260428"></script>
 </body>
 </html>
