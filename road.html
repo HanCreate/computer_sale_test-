@@ -12,6 +12,8 @@
    <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=vmvqklezk8"></script>
 </head>
 
+<body>
+
   <!-- ── TOP UTILITY BAR ── -->
   <div class="utility-bar">
     <div class="container utility-inner">
@@ -42,7 +44,7 @@
     </div>
   </div>
 
-  <!-- ── NAVIGATION ── -->
+    <!-- ── NAVIGATION ── -->
   <header class="site-header" id="siteHeader">
     <div class="container nav-inner">
       <a href="index.html" class="logo" id="logoLink">
@@ -73,8 +75,6 @@
     </div>
   </header>
 
-
-<body>
 
     <div class="container" style="padding: 60px 20px;">
         <div class="section-header" style="text-align: center; margin-bottom: 40px;">
@@ -160,27 +160,10 @@
           <span><strong>이메일:</strong> help@unithink.com</span>
         </div>
         
-        
+
         <p class="footer-copy" style="margin-top: 30px; color: #555;">© 2026 UNITHINK. All rights reserved. 본 사이트의 콘텐츠는 저작권법의 보호를 받습니다.</p>
       </div>
 
     </div>
   </footer>
-<script>
-      var location_coords = new naver.maps.LatLng(37.5326, 126.9648);
-      var mapOptions = {
-          center: location_coords,
-          zoom: 17,
-          zoomControl: true,
-          zoomControlOptions: { position: naver.maps.Position.TOP_RIGHT }
-      };
-      var map = new naver.maps.Map('map', mapOptions);
-      var marker = new naver.maps.Marker({
-          position: location_coords,
-          map: map,
-          animation: naver.maps.Animation.BOUNCE
-      });
-  </script>
-  <script src="script.js?v=20260428"></script>
-</body>
-</html>
+
