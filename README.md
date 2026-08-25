@@ -11,12 +11,12 @@ cumputer_sale_test/
 ├── style.css           ← 전체 스타일
 ├── script.js           ← 슬라이더 / 인터랙션 JS
 ├── images/
-│   ├── banner1.png     ← 슬라이더 배너 1 (키보드)
-│   ├── banner2.png     ← 슬라이더 배너 2 (마우스)
-│   ├── banner3.png     ← 슬라이더 배너 3 (컬렉션)
-│   ├── product1.png    ← 제품 카드 이미지 (키보드)
-│   ├── product2.png    ← 제품 카드 이미지 (마우스)
-│   ├── product3.png    ← 제품 카드 이미지 (마우스패드)
+│     ← 
+│   ├── banner2.png     ← 
+│   ├── banner3.png     ← 
+│   ├── product1.png    ← 
+│   ├── product2.png    ← 
+│   ├── product3.png    ← 
 │   └── product_real.png ← 실제 제품 사진
 └── README.md
 ```
