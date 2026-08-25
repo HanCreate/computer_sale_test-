@@ -9,15 +9,6 @@ cumputer_sale_test/
 ├── index.html          ← 메인 홈페이지
 ├── manual.html         ← 소프트웨어 메뉴얼 페이지
 ├── style.css           ← 전체 스타일
-├── script.js           ← 슬라이더 / 인터랙션 JS
-├── images/
-│     ← 
-│   ├── banner2.png     ← 
-│   ├── banner3.png     ← 
-│   ├── product1.png    ← 
-│   ├── product2.png    ← 
-│   ├── product3.png    ← 
-│   └── product_real.png ← 실제 제품 사진
 └── README.md
 ```
 
